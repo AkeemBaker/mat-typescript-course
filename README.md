@@ -1,1 +1,1 @@
-# mat-typescript-course
+# Selenium - JavaScript Course

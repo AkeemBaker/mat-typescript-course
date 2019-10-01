@@ -6,4 +6,16 @@ declare namespace myLib
         description: string;
         price: string;
     }
+
+    interface CustomerDetails
+    {
+        name: string;
+        address: string;
+        vehicleDetails?:
+        {
+            make: string;
+            model: string;
+            year: number;
+        }
+    }
 }

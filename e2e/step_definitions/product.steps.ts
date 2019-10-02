@@ -17,8 +17,7 @@ Given("a Product doesn't exist", async function(dataTable) {
     const arrayOfProducts = dataTable.hashes();
     this.product = arrayOfProducts[0];
 
-    while (await homePage.findProductsInTable(this.product).count() > 0)
-    {
+    while (await homePage.findProductsInTable(this.product).count() > 0) {
         homePage.findProductsInTable(this.product).first().click();
         viewProductPage.deleteButton.click();
     }
